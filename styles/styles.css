@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12, 8.33vh);
+}
+.card{
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-column: 2/12;
+    grid-row: 2/12;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.425);
+}
+
+.equilibrium{
+    align-self: center;
+    width: 85%;
+    margin: 13px;
+    border-radius: 3%;
+}
+
+.card_title{
+    font-size: 23px;
+    margin: 0 20px;
+    color: hsl(0, 0%, 100%);
+}
+.card_paragraph{
+    color: hsl(215, 20%, 47%);
+    margin-left: 20px;
+    font-size: 17px;
+    
+}
+.card_data{
+    margin: 0 20px;
+    font-size: 15px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    
+}
+.data_items_1{
+    color: aqua;
+    position: relative;
+    right: 1.5rem;
+}
+.data_items_2{
+    color: hsl(215, 20%, 47%);
+}
+.icon_clock{
+    position: relative;
+    left: 1.5rem;
+}
+#avatar{
+    border-radius: 50%;
+    border: 1.5px solid hsl(0, 0%, 100%);
+    width: 16%;
+    margin-right: 10px;
+   
+}
+.card_creator_info{
+    width: 87%;
+    align-self: center;
+    border-top: 2px solid hsla(215, 20%, 47%, 0.171);
+    display: flex;
+    padding: 11px;
+}
+.card_creator_name{
+    align-self: center;
+    font-size: 16px;
+    color: white;
+    
+}
+p.card_creator_name>span{
+    color: hsl(215, 20%, 47%);
+}
+
+.attribution {display: flex; justify-content: center; align-items: flex-end; font-size: 11px; text-align: center; color: white; grid-column: 2/12; grid-row: 12/13;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width: 992px) {
+    body{
+        grid-template-columns: repeat(8,1fr);
+    }
+    .card{
+        margin: 5vh 2vh;
+        justify-content: space-evenly;
+        grid-column: 4/6;
+    }
+    
+    .equilibrium{
+        
+        width: 90%;
+    }
+    .card_title{
+        font-size: 3vh;
+        margin-left: 27px;
+    }
+    .card_paragraph{
+        font-size: 2.2vh;
+        margin-left: 27px;
+    }
+    .card_data{
+        font-size: 19px;
+    }
+    .icon_etherium{
+        width: 15px;
+        margin-left: 8px;
+    }
+    .data_items_1{
+        right: 50px;
+    }
+    
+    .icon_clock{
+        width: 25px;
+        left: 3rem;
+    }
+    .data_items_2{
+        margin-right: 13px;
+        
+    }
+    .card_creator_name{
+        font-size: 1.25rem;
+    }
+    
+    .attribution{
+        grid-column: 4/6;
+    }
+    .attribution a{
+        font-size: 18px
+    }
+}
